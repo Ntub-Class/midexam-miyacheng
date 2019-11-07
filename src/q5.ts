@@ -5,14 +5,30 @@
 // 輸出說明: 請直接console.log出是否合法
 
 let checkId = function (id: string) {
+    let n1 = 0
+    let n2 = 0
+    let n3 = 0
     for (let i = 0; i <= 2; i++) {
         //console.log(calcString.charAt(i))
-        if (calcString.charAt(i)=0) {
-            return
+
+        for (let J = 0; J <= 2; J++) {
+            if (i = 0) {
+                let n1 = id[i] * 10
+            }
+            if (i = 1) {
+                let n2 = id[i] * 9
+            }
+            if (i = 2) {
+                let n3 = id[i] * 8
+            }
+            return n1
+            return n2
+            return n3
+        }
+        if (n1 + n2 + n3 % 5 - 0) {
+            console.log(合法)
         } else {
-            for (let J = i; J <= 2; J++) {
-                calcString.charAt(i)*10
-            } 
+            console.log(不合法)
         }
 
         checkId('425') // 不合法
