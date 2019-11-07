@@ -5,10 +5,17 @@
 // 輸出說明: 請直接console.log出是否合法
 
 let checkId = function (id: string) {
+    for (let i = 0; i <= 2; i++) {
+        //console.log(calcString.charAt(i))
+        if (calcString.charAt(i)=0) {
+            return
+        } else {
+            for (let J = i; J <= 2; J++) {
+                calcString.charAt(i)*10
+            } 
+        }
 
-}
-
-checkId('425') // 不合法
-checkId('355') // 合法
-checkId('754') // 不合法
-checkId('100') // 合法
+        checkId('425') // 不合法
+        checkId('355') // 合法
+        checkId('754') // 不合法
+        checkId('100') // 合法

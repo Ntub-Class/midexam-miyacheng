@@ -6,10 +6,39 @@
 
 
 let calc = function (calcString: string) {
-
+    let n1;
+    let n2;
+    let n3;
+    let ans;
+    for (let i = 0; i <= 2; i++) {
+        //console.log(calcString.charAt(i))
+        if (i = 0) {
+            let n1 = calcString.charAt(i)
+        } else {
+            if (i = 1) {
+                let n2 = calcString.charAt(i)
+            } else {
+                let n3 = calcString.charAt(i)
+            }
+        }
+    }
+    if (n2 = '+') {
+        let ans = `${n1}+${n3}`
+    } else {
+        if (n2 = '-') {
+            let ans = `${n1}-${n3}`
+        } else {
+            if (n2 = '*') {
+                let ans = `${n1}*${n3}`
+            } else {
+                let ans = `${n1}/${n3}`
+            }
+        }
+    }
+    return ans
 }
 
 calc('8*2')
-calc('1+1')
-calc('5/5')
-calc('9-1')
+//calc('1+1')
+//calc('5/5')
+//calc('9-1')
